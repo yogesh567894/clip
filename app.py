@@ -22,7 +22,20 @@ def transcribe_video(video_path, model_name="base"):
     ffmpeg_env_path = os.environ.get('FFMPEG_PATH')
     ffmpeg_dir = None
     
-    if ffmpeg_env_path and os.path.exists(ffmpeg_env_path):
+    # Directly look for ffmpeg in the known essentials_build directory
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    essentials_build_path = os.path.join(current_dir, "ffmpeg-2025-04-21-git-9e1162bdf1-essentials_build", "bin", "ffmpeg.exe")
+    
+    if os.path.exists(essentials_build_path):
+        print(f"Found FFmpeg in essentials_build directory: {essentials_build_path}")
+        ffmpeg_env_path = essentials_build_path
+        ffmpeg_dir = os.path.dirname(essentials_build_path)
+        
+        # Add to PATH for Whisper
+        if ffmpeg_dir not in os.environ["PATH"]:
+            os.environ["PATH"] = ffmpeg_dir + os.pathsep + os.environ["PATH"]
+            print(f"Added FFmpeg directory to PATH: {ffmpeg_dir}")
+    elif ffmpeg_env_path and os.path.exists(ffmpeg_env_path):
         # Extract the directory containing ffmpeg.exe
         ffmpeg_dir = os.path.dirname(ffmpeg_env_path)
         print(f"Adding FFmpeg directory to PATH: {ffmpeg_dir}")
