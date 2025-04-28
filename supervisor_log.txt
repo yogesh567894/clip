@@ -1,0 +1,28 @@
+[2025-04-28 03:41:29] Created directory: intermediate_files
+[2025-04-28 03:41:29] Successfully initialized NVIDIA AI
+[2025-04-28 03:41:30] Supervisor agent initialized
+[2025-04-28 03:41:47] Checking disk space for path: .
+[2025-04-28 03:41:47] Disk space low (98.93%), running cleanup
+[2025-04-28 03:41:47] Running cleanup tool (days_old=7, force=False)
+[2025-04-28 03:41:47] Warning: Low disk space (98.93%)
+[2025-04-28 03:41:47] Error running agent: "Input to ChatPromptTemplate is missing variables {'chat_history'}.  Expected: ['agent_scratchpad', 'chat_history', 'input'] Received: ['input', 'intermediate_steps', 'agent_scratchpad']"
+[2025-04-28 03:41:59] Checking disk space for path: .
+[2025-04-28 03:41:59] Disk space low (98.93%), running cleanup
+[2025-04-28 03:41:59] Running cleanup tool (days_old=7, force=False)
+[2025-04-28 03:41:59] Warning: Low disk space (98.93%)
+[2025-04-28 03:41:59] Error running agent: "Input to ChatPromptTemplate is missing variables {'chat_history'}.  Expected: ['agent_scratchpad', 'chat_history', 'input'] Received: ['input', 'intermediate_steps', 'agent_scratchpad']"
+[2025-04-28 03:42:03] Checking disk space for path: .
+[2025-04-28 03:42:03] Disk space low (98.93%), running cleanup
+[2025-04-28 03:42:03] Running cleanup tool (days_old=7, force=False)
+[2025-04-28 03:42:03] Warning: Low disk space (98.93%)
+[2025-04-28 03:42:03] Error running agent: "Input to ChatPromptTemplate is missing variables {'chat_history'}.  Expected: ['agent_scratchpad', 'chat_history', 'input'] Received: ['input', 'intermediate_steps', 'agent_scratchpad']"
+[2025-04-28 03:42:06] Checking disk space for path: .
+[2025-04-28 03:42:06] Disk space low (98.93%), running cleanup
+[2025-04-28 03:42:06] Running cleanup tool (days_old=7, force=False)
+[2025-04-28 03:42:06] Warning: Low disk space (98.93%)
+[2025-04-28 03:42:06] Error running agent: "Input to ChatPromptTemplate is missing variables {'chat_history'}.  Expected: ['agent_scratchpad', 'chat_history', 'input'] Received: ['input', 'intermediate_steps', 'agent_scratchpad']"
+[2025-04-28 03:47:22] Workflow driver initialized
+[2025-04-28 03:47:22] Searching for videos in input_videos
+[2025-04-28 03:47:42] Running complete workflow for video: None
+[2025-04-28 03:47:42] Searching for videos in input_videos
+[2025-04-28 03:47:42] Extracting 3 clips from input_videos\Breaking Bad _ The Final Season Teaser- UK & Ireland [HD] _ Netflix (1080p).mp4 with query: 'Create engaging clips'

@@ -1,0 +1,47 @@
+[
+  {
+    "start": 0.0,
+    "end": 2.0,
+    "text": "I'm a money you have in bank."
+  },
+  {
+    "start": 4.8,
+    "end": 6.8,
+    "text": "Not the car you drive."
+  },
+  {
+    "start": 6.8,
+    "end": 8.8,
+    "text": "Not the contents of your wallet."
+  },
+  {
+    "start": 11.200000000000001,
+    "end": 13.200000000000001,
+    "text": "You're not your fucking khakis."
+  },
+  {
+    "start": 18.2,
+    "end": 20.2,
+    "text": "First rule of bike club is."
+  },
+  {
+    "start": 20.2,
+    "end": 22.2,
+    "text": "You do not talk about bike club."
+  },
+  {
+    "start": 23.2,
+    "end": 25.2,
+    "text": "Second rule of bike club is."
+  },
+  {
+    "start": 25.2,
+    "end": 29.2,
+    "text": "You do not talk about bike club."
+  },
+  {
+    "start": 30.0,
+    "end": 32.0,
+    "text": "You do not talk about bike club."
+  }
+]

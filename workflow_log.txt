@@ -1,0 +1,16 @@
+[2025-04-28 14:00:18] Workflow driver initialized
+[2025-04-28 14:00:18] Extracting 1 clips from input_videos/test.mp4 with query: 'create a clip of interesting moments'
+[2025-04-28 14:05:02] Workflow driver initialized
+[2025-04-28 14:05:02] Searching for videos in input_videos
+[2025-04-28 14:05:38] Running complete workflow for video: None
+[2025-04-28 14:05:38] Searching for videos in input_videos
+[2025-04-28 14:05:38] Extracting 5 clips from input_videos\Breaking Bad _ The Final Season Teaser- UK & Ireland [HD] _ Netflix (1080p).mp4 with query: 'find the best moments'
+[2025-04-28 14:23:09] Workflow driver initialized
+[2025-04-28 14:23:09] Searching for videos in input_videos
+[2025-04-28 14:24:12] Workflow driver initialized
+[2025-04-28 14:24:12] Searching for videos in input_videos
+[2025-04-28 14:25:33] Workflow driver initialized
+[2025-04-28 14:25:33] Searching for videos in input_videos
+[2025-04-28 14:25:37] Running complete workflow for video: None
+[2025-04-28 14:25:37] Searching for videos in input_videos
+[2025-04-28 14:25:44] Extracting 3 clips from input_videos\Why is Chennai so underrated_.mp4 with query: 'Create engaging clips'

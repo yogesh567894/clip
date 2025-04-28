@@ -1,30 +1,129 @@
-# ClipAnything
-Clip any moment from any video with prompts
+# CLIP: AI-Powered Video Enhancement System
 
-Multimodal AI clipping that lets you clip any moment from any video using visual, audio, and sentiment cues
+CLIP is an advanced AI system for video enhancement and transformation, designed to help content creators optimize their videos for different social media platforms.
 
-Just type your prompt.
+## Features
 
-AI will clip the right moments for you from any video.
+- **Smart Reframing**: Automatically reframe your videos to different aspect ratios (1:1, 4:5, 9:16) using AI to keep the important content in frame
+- **Auto-Captioning**: Add professional burned-in captions to your videos with multiple style options
+- **Clip Extraction**: Intelligently extract the most engaging clips from longer videos
+- **Batch Processing**: Process multiple videos at once with the same settings
+- **Multi-language Support**: Works with various source languages for captioning
 
-If you wish to add ClipAnything into your application, here is an api to create clips from long-form video :- https://docs.vadoo.tv/docs/guide/create-ai-clips
+## System Requirements
 
-### Youtube Tutorial -> https://youtu.be/R_3kexWz4TU
+- Python 3.8 or higher
+- FFmpeg installed and in PATH
+- NVIDIA API key (for AI features)
 
-### Medium Article -> https://medium.com/@anilmatcha/clipanything-free-ai-video-editor-in-python-tutorial-526f7a972829
+## Installation
 
-![hqdefault](https://github.com/user-attachments/assets/9689a74c-598a-4aab-b02e-54673941c2b9)
+1. Clone this repository:
+   ```
+   git clone https://github.com/yourusername/clip-video-enhancer.git
+   cd clip-video-enhancer
+   ```
 
-### Properties
+2. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
-##### Advanced Video Analysis
+3. Set up your NVIDIA API key:
+   ```
+   export NVIDIA_API_KEY=your_api_key_here
+   ```
 
-Harness cutting-edge technology to analyze every aspect of your video. Our state-of-the-art system evaluates each frame, combining visual, audio, and sentiment cues to identify objects, scenes, actions, sounds, emotions, texts, and more. Each scene is rated for its potential virality, giving you insights into what makes your content compelling.
+## Quick Start
 
-##### Customizable Video Clipping
+1. Place your videos in the `input_videos` directory
+2. Run the enhancer:
+   ```
+   python video_enhancer_agent.py -i input_videos/your_video.mp4 -a 9:16 -q 720p
+   ```
+3. Find your enhanced videos in the `output_videos` directory
 
-Tailor your video clips to your exact needs. Whether you're looking to compile highlights from a sports game or showcase the best moments from a travel vlog, simply enter your prompts. We'll personalize your clips, automatically capturing key moments to align with your vision.
+## Usage Guide
 
-##### Demo Input -> https://www.youtube.com/watch?v=U9mJuUkhUzk
+### Basic Command Structure
 
-##### Output Video -> https://github.com/SamurAIGPT/ClipAnything/blob/main/edited_output.mp4
+```
+python video_enhancer_agent.py [options]
+```
+
+### Common Options
+
+| Option | Description | Example |
+|--------|-------------|---------|
+| `-i, --input` | Input video path | `-i input_videos/video.mp4` |
+| `-a, --aspect-ratio` | Target aspect ratio | `-a 9:16` |
+| `-q, --quality` | Output quality | `-q 720p` |
+| `-l, --language` | Source language | `-l en-US` |
+| `-s, --caption-style` | Caption style | `-s bold` |
+| `-b, --batch` | Batch process all videos | `-b` |
+| `-e, --extract` | Extract clips | `-e` |
+
+### Examples
+
+#### Vertical (Stories/Reels) Format
+```
+python video_enhancer_agent.py -i input_videos/video.mp4 -a 9:16 -q 720p
+```
+
+#### Square (Instagram) Format
+```
+python video_enhancer_agent.py -i input_videos/video.mp4 -a 1:1 -q 1080p
+```
+
+#### Batch Processing
+```
+python video_enhancer_agent.py -b -a 4:5 -q 720p
+```
+
+## Directory Structure
+
+- `input_videos/`: Place your source videos here
+- `output_videos/`: Enhanced full videos are saved here
+- `output_clips/`: Extracted clips are saved here
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Error: FFmpeg not found**
+   - Make sure FFmpeg is installed and added to your PATH
+
+2. **No captions appearing**
+   - Check if the video has clear audio for transcription
+   - Try specifying the language with the `-l` option
+
+3. **Reframing issues**
+   - For videos with fast-moving subjects, try using debug mode with `-d`
+
+## Advanced Features
+
+### Custom Caption Styles
+
+You can customize the appearance of captions by editing the caption style parameters in `video_enhancer.py`.
+
+### Clip Extraction
+
+Use the interactive clip extraction mode to select specific portions of a video:
+
+```
+python video_enhancer_agent.py -e -i input_videos/your_video.mp4
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- OpenAI for the Whisper transcription model
+- NVIDIA for NeMo AI services
+- MoviePy for video processing capabilities
